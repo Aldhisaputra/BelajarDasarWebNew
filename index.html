@@ -4,24 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Submissions</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">My Profile</div>
+      <div class="logo">Shop</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#seller">Best Seller</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">My Profile</div>
+      <div class="logo">Shop</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -29,48 +28,87 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#product" onclick="toggleMenu()">Product</a></li>
+          <li><a href="#service" onclick="toggleMenu()">Service</a></li>
+          <li><a href="#seller" onclick="toggleMenu()">Best Seller</a></li>
         </div>
       </div>
     </nav>
-    <section id="profile">
+    <section id="home">
       <div class="section__pic-container">
-        <img src="./img/Project/foto-fotor-20240311222249.png" alt="John Doe profile picture" />
+        <img src="./assets/model.png" alt="Model" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Aldhi Saputra</h1>
-        <p class="section__text__p2">Informatics Engineering Students</p>
+        <p class="section__text__p1">New arrivals</p>
+        <h1 class="title">Choose your</h1>
+        <p class="section__text__p2">Own Collection</p>
         <div class="btn-container">
-          <button class="btn btn-color-2" onclick="location.href='./#contact'">
-            Contact Info
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#product'">
+            Buy Now
           </button>
         </div>
-        <div id="socials-container">
-          <img
-            src="./img/Project/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/aldhi-saputra-304338192/'"
-          />
-          <img
-            src="./img/Project/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Aldhisaputra'"
-          />
-          <img
-            src="./img/Project/instagram.png"
-            alt="My Instagram profile"
-            class="icon"
-            onclick="location.href='https://www.instagram.com/aldhi.5'"
-          />
-        </div>
-      </div>
     </section>
+    <section id="product">
+      <h1 class="title">All Product</h1>
+        <div class="product">
+        <div class="product-container">
+            <img src="assets/Product/p1.png" alt="">
+        </div>
+        <div class="product-container">
+            <img src="assets/Product/p11.png" alt="">
+        </div>
+        <div class="product-container">
+            <img src="/assets/Product/p4.png" alt="">
+        </div>
+        <div class="product-container">
+            <img src="assets/Product/p6.png" alt="">
+        </div>
+        <div class="product-container">
+          <img src="assets/Product/p2.png" alt="">
+      </div>
+      <div class="product-container">
+          <img src="assets/Product/p9.png" alt="">
+      </div>
+      <div class="product-container">
+          <img src="/assets/Product/p8.png" alt="">
+      </div>
+      <div class="product-container">
+          <img src="assets/Product/p7.png" alt="">
+      </div>
+    </div>
+    </section>
+    <section id="service">
+      <h1 class="title">Service</h1>
+      <div class="service-row">
+        <div class="service-container">
+            <h2>Fast Delivery</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nostrum!</p>
+        </div>
+        <div class="service-container">
+            <h2>Easy Payment</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nostrum!</p>
+        </div>
+        <div class="service-container">
+            <h2>Get Discount</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nostrum!</p>
+        </div>
+    </div>
+    </section>
+    <section id="seller">
+      <h1 class="title">Best Seller</h1>
+        <div class="seller-row">
+            <div class="product-container seller-container">
+                <img src="assets/Product/p6.png" alt="">
+            </div>
+            <div class="product-container seller-container">
+                <img src="assets/Product/p8.png" alt="">
+            </div>
+        </div>
+    </section>
+    <footer>
+      <p>created by <span> Aldhi Saputra</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
