@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <header>
     <nav id="desktop-nav">
-      <div class="logo">Shop</div>
+      <div class="logo">Cloth</div>
       <div>
         <ul class="nav-links">
           <li><a href="#product">Product</a></li>
           <li><a href="#service">Service</a></li>
           <li><a href="#seller">Best Seller</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
+  </header>
     <nav id="hamburger-nav">
       <div class="logo">Shop</div>
       <div class="hamburger-menu">
@@ -31,9 +34,12 @@
           <li><a href="#product" onclick="toggleMenu()">Product</a></li>
           <li><a href="#service" onclick="toggleMenu()">Service</a></li>
           <li><a href="#seller" onclick="toggleMenu()">Best Seller</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
+    <main>
+      <article>
     <section id="home">
       <div class="section__pic-container">
         <img src="./assets/model.png" alt="Model" />
@@ -49,6 +55,8 @@
           </button>
         </div>
     </section>
+  </article>
+  <article>
     <section id="product">
       <h1 class="title">All Product</h1>
         <div class="product">
@@ -78,23 +86,27 @@
       </div>
     </div>
     </section>
+  </article>
+  <article>
     <section id="service">
       <h1 class="title">Service</h1>
       <div class="service-row">
         <div class="service-container">
             <h2>Fast Delivery</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nostrum!</p>
+            <p>Get your items delivered quickly with our fast delivery service!</p>
         </div>
         <div class="service-container">
             <h2>Easy Payment</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nostrum!</p>
+            <p>Enjoy hassle-free payments with our easy payment options!</p>
         </div>
         <div class="service-container">
             <h2>Get Discount</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nostrum!</p>
+            <p>Grab amazing discounts now! Don't miss out on our special offers!</p>
         </div>
     </div>
     </section>
+  </article>
+  <article></article>
     <section id="seller">
       <h1 class="title">Best Seller</h1>
         <div class="seller-row">
@@ -106,6 +118,47 @@
             </div>
         </div>
     </section>
+  </article>
+  </main>
+    <aside>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:aldhisaputra033@gmail.com">aldhisaputra033@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/aldhi-saputra-304338192/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/instagram.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://www.instagram.com/aldhi.5">Instagram</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://github.com/Aldhisaputra">Github</p>
+        </div>
+      </div>
+    </section>
+  </aside>
     <footer>
       <p>created by <span> Aldhi Saputra</p>
     </footer>
